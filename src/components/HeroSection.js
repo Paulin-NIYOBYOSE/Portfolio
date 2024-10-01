@@ -33,11 +33,13 @@ const HeroSection = () => {
     };
 
     return (
-        <section className="hero" id="hero">
+        <section className="hero" id="home">
             <header className="flex justify-between items-center p-4 gap-16 font-poppins font-semibold">
-                <div className="ml-5 mt-5">
-                    <h3>Paulin</h3>
-                </div>
+                <a href="#home">
+                    <div className="ml-5 mt-5">
+                        <h3>Paulin</h3>
+                    </div>
+                </a>
                 <div className="block lg:hidden">
                     <button onClick={toggleMenu}>
                         {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
