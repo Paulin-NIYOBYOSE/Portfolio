@@ -1,12 +1,11 @@
 import React from "react";
-import { FaGithub } from "react-icons/fa";
-import { FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaInstagram, FaTwitter } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 
 const Contact = () => {
     return (
-        <section className="" id="contact">
-            <h2 className="text-center text-3xl md:text-5xl font-bold mb-10">Contact</h2>
+        <section className="py-20 bg-white dark:bg-gray-800" id="contact">
+            <h2 className="text-center text-3xl md:text-5xl font-bold mb-10 dark:text-white">Contact</h2>
             <div className="md:flex md:justify-center md:items-center gap-2">
                 <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 gap-4 justify-center items-center">
                     <a
@@ -52,7 +51,7 @@ const Contact = () => {
                 </div>
             </div>
 
-            <h3 className="flex justify-center items-center mt-10 pb-2">
+            <h3 className="flex justify-center items-center mt-10 pb-2 dark:text-white">
                 Made with ❤️ by Paulin
             </h3>
         </section>

@@ -9,11 +9,11 @@ const HeroSection = () => {
         setMenuOpen(!menuOpen);
     };
 
-    // State to track theme
+    // State to track theme, defaulting to dark mode unless user has a preference
     const [darkMode, setDarkMode] = useState(() => {
         // Get theme preference from localStorage, if available
         const savedTheme = localStorage.getItem("theme");
-        return savedTheme === "dark";
+        return savedTheme ? savedTheme === "dark" : true; // Default to dark mode
     });
 
     // Effect to apply the theme class to the HTML tag
@@ -46,14 +46,13 @@ const HeroSection = () => {
                 <div className={`hidden lg:flex flex-row gap-5 items-center`}>
                     <ul className="flex flex-row gap-10 mt-2">
                         <li className="p-2 cursor-pointer">
-                            <a href="#project" className="cursor-pointer">Projects</a> {/* Updated this line */}
-                        </li>
-
-                        <li className="p-2 cursor-pointer">
-                            <a href="#skills" className="cursor-pointer">Skills</a> {/* Updated this line */}
+                            <a href="#project" className="cursor-pointer">Projects</a>
                         </li>
                         <li className="p-2 cursor-pointer">
-                            <a href="#contact" className="cursor-pointer">Contact</a> {/* Updated this line */}
+                            <a href="#skills" className="cursor-pointer">Skills</a>
+                        </li>
+                        <li className="p-2 cursor-pointer">
+                            <a href="#contact" className="cursor-pointer">Contact</a>
                         </li>
                     </ul>
                     <button
@@ -74,7 +73,7 @@ const HeroSection = () => {
                         </button>
                         <ul className="flex flex-col gap-6 mt-4 text-center">
                             <li>
-                                <a href="#project" className="cursor-pointer">Projects</a> {/* Updated this line */}
+                                <a href="#project" className="cursor-pointer">Projects</a>
                             </li>
                             <li onClick={toggleMenu} className="cursor-pointer">Skills</li>
                             <li onClick={toggleMenu} className="cursor-pointer">Contact</li>
@@ -99,7 +98,7 @@ const HeroSection = () => {
                 </h2>
                 <p className="max-w-3xl mx-auto text-black font-poppins text-lg dark:text-indigo-300 mb-8">
                     I'm a full-stack software developer based in Rwanda, currently working on FXMA. I specialize in Software Programming and Embedded Systems at the Rwanda Coding Academy.
-                    With a strong focus on ML, Python and JAVA , I enjoy tackling complex problems and building efficient, scalable applications.
+                    With a strong focus on ML, Python and JAVA, I enjoy tackling complex problems and building efficient, scalable applications.
                     Take a look at my projects, and feel free to reach out if you’d like to connect!
                 </p>
                 <div className="flex justify-center gap-6">
