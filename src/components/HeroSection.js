@@ -47,14 +47,14 @@ const HeroSection = () => {
                 </div>
                 <div className={`hidden lg:flex flex-row gap-5 items-center`}>
                     <ul className="flex flex-row gap-10 mt-2">
-                        <li className="p-2 cursor-pointer">
-                            <a href="#project" className="cursor-pointer">Projects</a>
+                        <li className="p-2">
+                            <a href="#project" className="">Projects</a>
                         </li>
-                        <li className="p-2 cursor-pointer">
-                            <a href="#skills" className="cursor-pointer">Skills</a>
+                        <li className="p-2">
+                            <a href="#skills" className="">Skills</a>
                         </li>
-                        <li className="p-2 cursor-pointer">
-                            <a href="#contact" className="cursor-pointer">Contact</a>
+                        <li className="p-2">
+                            <a href="#contact" className="">Contact</a>
                         </li>
                     </ul>
                     <button
@@ -75,10 +75,10 @@ const HeroSection = () => {
                         </button>
                         <ul className="flex flex-col gap-6 mt-4 text-center">
                             <li>
-                                <a href="#project" className="cursor-pointer">Projects</a>
+                                <a href="#project" className="">Projects</a>
                             </li>
-                            <li onClick={toggleMenu} className="cursor-pointer">Skills</li>
-                            <li onClick={toggleMenu} className="cursor-pointer">Contact</li>
+                            <li onClick={toggleMenu} className="">Skills</li>
+                            <li onClick={toggleMenu} className="">Contact</li>
                         </ul>
                         <button
                             onClick={toggleTheme}
@@ -91,7 +91,7 @@ const HeroSection = () => {
             )}
 
             <div className="container mx-auto text-center flex flex-col justify-center items-center min-h-screen">
-                <h1 className="font-poppins text-5xl md:text-7xl font-bold text-black mb-4 dark:text-white">
+                <h1 className="font-poppins text-2xl md:text-7xl font-bold text-black mb-4 dark:text-white">
                     Hi, I am <span className="dark:text-indigo-400 text-gray-600">NIYOBYOSE Paulin.</span>
                 </h1>
 
@@ -103,18 +103,32 @@ const HeroSection = () => {
                     With a strong focus on ML, Python and JAVA, I enjoy tackling complex problems and building efficient, scalable applications.
                     Take a look at my projects, and feel free to reach out if you’d like to connect!
                 </p>
-                <div className="flex justify-center gap-6">
-                    <a href="/Paulin.pdf"
-                        download="Paulin.pdf" className="px-6 py-3 border-2 border-indigo-300 text-indigo-300 hover:bg-indigo-300 hover:text-gray-800 transition-colors duration-300 rounded-md">
+                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-0 justify-items-center">
+                    <a
+                        href="/Paulin.pdf"
+                        download="Paulin.pdf"
+                        className="px-3 py-3 border-2 border-indigo-300 text-indigo-300 hover:bg-indigo-300 hover:text-gray-800 transition-colors duration-300 rounded-md text-center"
+                    >
                         Resume
                     </a>
-                    <a href="https://github.com/Paulin-NIYOBYOSE" target="_blank" rel="noopener noreferrer" className="px-4 py-3 border-2 border-indigo-300 text-indigo-300 hover:bg-indigo-300 hover:text-gray-800 transition-colors duration-300 rounded-md">
+                    <a
+                        href="https://github.com/Paulin-NIYOBYOSE"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-3 border-2 border-indigo-300 text-indigo-300 hover:bg-indigo-300 hover:text-gray-800 transition-colors duration-300 rounded-md text-center"
+                    >
                         <FaGithub className="text-lg" />
                     </a>
-                    <a href="https://www.linkedin.com/in/niyobyose-paulin-5a8497304/" target="_blank" rel="noopener noreferrer" className="px-4 py-3 border-2 border-indigo-300 text-indigo-300 hover:bg-indigo-300 hover:text-gray-800 transition-colors duration-300 rounded-md">
+                    <a
+                        href="https://www.linkedin.com/in/niyobyose-paulin-5a8497304/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="px-4 py-3 border-2 border-indigo-300 text-indigo-300 hover:bg-indigo-300 hover:text-gray-800 transition-colors duration-300 rounded-md text-center"
+                    >
                         <FaLinkedin className="text-lg" />
                     </a>
                 </div>
+
             </div>
             <ScrollToTopButton />
         </section>
