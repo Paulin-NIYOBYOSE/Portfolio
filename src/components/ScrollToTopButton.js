@@ -2,8 +2,6 @@ import React, { useState, useEffect } from 'react';
 
 const ScrollToTopButton = () => {
     const [isVisible, setIsVisible] = useState(false);
-
-    // Show button when the page is scrolled up to a certain height
     const toggleVisibility = () => {
         if (window.pageYOffset > 300) {
             setIsVisible(true);
@@ -11,12 +9,10 @@ const ScrollToTopButton = () => {
             setIsVisible(false);
         }
     };
-
-    // Scroll to top when the button is clicked
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth', // Smooth scrolling
+            behavior: 'smooth',
         });
     };
 

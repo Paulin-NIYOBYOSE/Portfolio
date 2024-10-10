@@ -2,7 +2,6 @@ import React from "react";
 import { FaGithub } from "react-icons/fa6";
 import { FaExternalLinkAlt } from "react-icons/fa";
 
-// Project data
 const projects = [
     {
         title: "IS Technology",
@@ -22,14 +21,14 @@ const projects = [
         title: "Joblift",
         description: "This application allows users to track jobs they’ve applied for, monitor their status, set reminders for follow-ups, and manage their job search effectively.",
         stack: ["Python", "Java", "Next.js"],
-        githubLink: "https://github.com/Paulin-NIYOBYOSE/Is-Tech",  // Replace with actual GitHub link
+        githubLink: "https://github.com/Paulin-NIYOBYOSE/Is-Tech",
         liveLink: "https://github.com/Paulin-NIYOBYOSE"
     },
     {
         title: "Cineflix",
         description: "A Next-Gen Netflix Clone with Enhanced Features",
         stack: ["React", "Tailwind CSS"],
-        githubLink: "https://github.com/Paulin-NIYOBYOSE/Cineflix",  // Replace with actual GitHub link
+        githubLink: "https://github.com/Paulin-NIYOBYOSE/Cineflix",
         liveLink: "https://github.com/Paulin-NIYOBYOSE/Cineflix"
     },
 ];

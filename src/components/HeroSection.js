@@ -1,6 +1,6 @@
 import ScrollToTopButton from "./ScrollToTopButton";
 import { useState, useEffect } from "react";
-import { FaSun, FaMoon, FaGithub, FaLinkedin, FaBars, FaTimes } from "react-icons/fa"; // Import necessary icons
+import { FaSun, FaMoon, FaGithub, FaLinkedin, FaBars, FaTimes } from "react-icons/fa";
 
 const HeroSection = () => {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -9,14 +9,10 @@ const HeroSection = () => {
         setMenuOpen(!menuOpen);
     };
 
-    // State to track theme, defaulting to dark mode unless user has a preference
     const [darkMode, setDarkMode] = useState(() => {
-        // Get theme preference from localStorage, if available
         const savedTheme = localStorage.getItem("theme");
-        return savedTheme ? savedTheme === "dark" : true; // Default to dark mode
+        return savedTheme ? savedTheme === "dark" : true;
     });
-
-    // Effect to apply the theme class to the HTML tag
     useEffect(() => {
         if (darkMode) {
             document.documentElement.classList.add("dark");

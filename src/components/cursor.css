@@ -6,17 +6,17 @@
   .cursor {
     position: fixed;
     z-index: 9999;
-    background: #2696e8; /* Blue central dot */
-    width: 16px; /* Small size for the inner circle */
-    height: 16px; /* Small size for the inner circle */
+    background: #2696e8;
+    width: 16px; 
+    height: 16px; 
     border-radius: 50%;
     pointer-events: none;
-    transform: translate(-50%, -50%); /* Center the cursor */
+    transform: translate(-50%, -50%);
     transition: transform 0.05s ease-out;
-    box-shadow: none; /* Ensure no shadow is applied */
+    box-shadow: none; 
   }
 
   .cursor-before {
-    display: none; /* Completely remove the outer circle */
+    display: none;
   }
 }
