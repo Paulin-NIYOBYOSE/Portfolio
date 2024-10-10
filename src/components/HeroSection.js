@@ -68,11 +68,9 @@ const HeroSection = () => {
 
             {/* Menu overlay for smaller screens */}
             {menuOpen && (
-                <div className=" bg-gray-900 fixed mt-40 inset-0 bg-opacity-75 flex justify-center items-center z-50 h-[100px] px-5">
-                    <div className="bg-gray-900 p-6 rounded-md flex flex-col items-center w-full text-white ">
-                        <button onClick={toggleMenu} className="self-end">
-                            <FaTimes size={24} />
-                        </button>
+                <div className="fixed mt-40 inset-0 bg-opacity-75 flex justify-center items-center z-50 h-[100px] px-5">
+                    <div className="dark:bg-gray-900 bg-white p-6 border-2 border-indigo-400 dark:border-none rounded-md flex flex-col items-center w-full dark:text-white ">
+
                         <ul className="flex flex-col gap-6 mt-4 text-center">
                             <li>
                                 <a href="#project" className="">Projects</a>
