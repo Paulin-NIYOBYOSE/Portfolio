@@ -11,6 +11,13 @@ const projects = [
         liveLink: "https://is-tech-eta.vercel.app/"
     },
     {
+        title: "Cineflix",
+        description: "A Next-Gen Netflix Clone with Enhanced Features",
+        stack: ["React", "Tailwind CSS"],
+        githubLink: "https://github.com/Paulin-NIYOBYOSE/Cineflix",
+        liveLink: "https://cineflix0-movies.vercel.app/"
+    },
+    {
         title: "FXMA",
         description: "An online platform for educating people on forex trading, my trading bot, and signals",
         stack: ["Next.js", "Python", "Java"],
@@ -24,13 +31,7 @@ const projects = [
         githubLink: "https://github.com/Paulin-NIYOBYOSE/Is-Tech",
         liveLink: "https://github.com/Paulin-NIYOBYOSE"
     },
-    {
-        title: "Cineflix",
-        description: "A Next-Gen Netflix Clone with Enhanced Features",
-        stack: ["React", "Tailwind CSS"],
-        githubLink: "https://github.com/Paulin-NIYOBYOSE/Cineflix",
-        liveLink: "https://cineflix0-movies.vercel.app/"
-    },
+
 ];
 
 const Projects = () => {
