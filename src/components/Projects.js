@@ -29,7 +29,7 @@ const projects = [
         description: "A Next-Gen Netflix Clone with Enhanced Features",
         stack: ["React", "Tailwind CSS"],
         githubLink: "https://github.com/Paulin-NIYOBYOSE/Cineflix",
-        liveLink: "https://github.com/Paulin-NIYOBYOSE/Cineflix"
+        liveLink: "https://cineflix0-movies.vercel.app/"
     },
 ];
 
