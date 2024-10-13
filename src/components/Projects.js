@@ -4,18 +4,18 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
     {
-        title: "IS Technology",
-        description: "An online tech hub for selling all electronic devices",
-        stack: ["React", "Tailwind", "Java"],
-        githubLink: "https://github.com/Paulin-NIYOBYOSE/Is-Tech",
-        liveLink: "https://is-tech-eta.vercel.app/"
-    },
-    {
         title: "Cineflix",
         description: "A Next-Gen Netflix Clone with Enhanced Features",
         stack: ["React", "Tailwind CSS"],
         githubLink: "https://github.com/Paulin-NIYOBYOSE/Cineflix",
         liveLink: "https://cineflix0-movies.vercel.app/"
+    },
+    {
+        title: "IS Technology",
+        description: "An online tech hub for selling all electronic devices",
+        stack: ["React", "Tailwind", "Java"],
+        githubLink: "https://github.com/Paulin-NIYOBYOSE/Is-Tech",
+        liveLink: "https://is-tech-eta.vercel.app/"
     },
     {
         title: "FXMA",
