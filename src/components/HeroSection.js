@@ -1,11 +1,12 @@
+import React from 'react'; // Add this line
 import ScrollToTopButton from "./ScrollToTopButton";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const HeroSection = () => {
     return (
-        <section className="hero" id="home">
-            <div className="container mx-auto text-center flex flex-col justify-center items-center min-h-screen">
-                <h1 className="font-poppins text-2xl md:text-7xl font-bold text-black mb-4 dark:text-white">
+        <section className="hero flex flex-col gap-5 md:flex-row" id="home">
+            <div className="container mx-auto text-center flex flex-col justify-center items-center mt-20 md:mt-auto md:min-h-screen w-full  md:w-2/3">
+                <h1 className="font-poppins text-xl md:text-5xl font-bold text-black mb-4 dark:text-white">
                     Hi, I am <span className="dark:text-indigo-400 text-gray-600">NIYOBYOSE Paulin.</span>
                 </h1>
 
@@ -44,7 +45,9 @@ const HeroSection = () => {
                     </a>
                 </div>
             </div>
-
+            <div className="w-full md:w-1/3 md:mt-20 mb-10 md:mr-5 border-[10px] border-indigo-500 rounded-lg">
+                <img src="./paulinw.png" alt="" className="h-full w-full rounded-sm" />
+            </div>
             <ScrollToTopButton />
         </section>
     );

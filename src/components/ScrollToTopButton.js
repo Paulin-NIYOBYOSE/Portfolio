@@ -36,10 +36,10 @@ const ScrollToTopButton = () => {
                         backgroundColor: 'gray',
                         color: '#fff',
                         borderRadius: '50%',
-                        border: 'none',
                         fontSize: '20px',
                         zIndex: '1000',
-                        width: '50px'
+                        width: '50px',
+                        border: "1.5px red"
                     }}
                 >
                     ⬆

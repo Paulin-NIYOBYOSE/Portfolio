@@ -45,7 +45,7 @@ const Projects = () => {
                         <p className="text-gray-400 mb-5">{project.description}</p>
                         <div className="flex space-x-3 mb-4">
                             {project.stack.map((tech, i) => (
-                                <span key={i} className="dark:bg-gray-700 bg-gray-600 text-white px-2 py-1 rounded text-sm">{tech}</span>
+                                <span key={i} className="dark:bg-gray-700 bg-gray-600 border border-indigo-500 text-white px-2 py-1 rounded text-xs sm:text-sm">{tech}</span>
                             ))}
                         </div>
                         <div className="flex justify-between items-center gap-5">

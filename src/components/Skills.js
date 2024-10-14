@@ -10,7 +10,7 @@ const Skills = () => {
                 {skills.map((skill, index) => (
                     <div
                         key={index}
-                        className="dark:bg-gray-700 bg-gray-200 shadow-lg dark:text-white text-gray-900 px-4 py-2 rounded-md">
+                        className="dark:bg-gray-700 border-[1.5px] dark:border-indigo-500 bg-gray-200 shadow-lg dark:text-white text-gray-900 px-4 py-2 rounded-md">
                         {skill}
                     </div>
                 ))}
