@@ -49,7 +49,6 @@ const NavBar = () => {
                         <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#portfolio">Portfolio</a></li>
                         <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#blog">Blog</a></li>
                         <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#contact">Contact</a></li>
-
                     </ul>
                     <button
                         onClick={toggleTheme}
@@ -69,10 +68,7 @@ const NavBar = () => {
 
             {/* Mobile Menu */}
             {menuOpen && (
-                <div className="lg:hidden fixed inset-x-0 top-16 mx-auto bg-white/70 dark:bg-gray-900/70 backdrop-blur-md p-6 rounded-md shadow-lg z-50 max-w-sm flex flex-col items-center justify-center">
-                    <button className="self-end mb-4" onClick={toggleMenu}>
-                        <FaTimes size={24} className="text-gray-600 dark:text-gray-300" />
-                    </button>
+                <div className="lg:hidden fixed inset-x-0 top-16 mx-auto bg-white dark:bg-gray-900 p-6 rounded-md shadow-lg z-50 max-w-sm flex flex-col items-center justify-center">
                     <ul className="flex flex-col gap-6 text-gray-600 dark:text-gray-300 text-center">
                         <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#home" onClick={toggleMenu}>Home</a></li>
                         <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#about" onClick={toggleMenu}>About</a></li>

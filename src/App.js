@@ -5,6 +5,7 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import CustomCursor from "./components/CustomCursor";
 import NavBar from "./components/Navbar";
+import MyServices from "./components/MyServices";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <NavBar />
       <CustomCursor />
       <HeroSection />
+      <MyServices />
       <Projects />
       <Skills />
       <Contact />
