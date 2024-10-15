@@ -41,7 +41,7 @@ const NavBar = () => {
                 </div>
 
                 {/* Desktop Menu */}
-                <div className="hidden lg:flex flex-row gap-5 items-center">
+                <div className="hidden lg:flex flex-row gap-5 items-cente border h-14 w-[28rem] items-center justify-center rounded-[2rem] border-indigo-500">
                     <ul className="flex space-x-6 text-gray-600 dark:text-gray-300">
                         <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#home">Home</a></li>
                         <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#service">Services</a></li>
@@ -49,13 +49,14 @@ const NavBar = () => {
                         <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#project">Project</a></li>
                         <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#contact">Contact</a></li>
                     </ul>
-                    <button
-                        onClick={toggleTheme}
-                        className="ml-4 p-2 bg-gray-700 dark:bg-gray-100 dark:text-gray-800 text-white rounded-md flex items-center"
-                    >
-                        {darkMode ? <FaSun size={20} /> : <FaMoon size={20} />}
-                    </button>
+
                 </div>
+                <button
+                    onClick={toggleTheme}
+                    className="hidden  ml-4 p-2 bg-gray-700 dark:bg-gray-100 dark:text-gray-800 text-white rounded-md lg:flex items-center"
+                >
+                    {darkMode ? <FaSun size={20} /> : <FaMoon size={20} />}
+                </button>
 
                 {/* Mobile Menu Button */}
                 <div className="block lg:hidden">
