@@ -71,8 +71,8 @@ const NavBar = () => {
                 <div className="lg:hidden fixed inset-x-0 top-16 mx-auto bg-white dark:bg-gray-900 p-6 rounded-md shadow-lg z-50 max-w-sm flex flex-col items-center justify-center">
                     <ul className="flex flex-col gap-6 text-gray-600 dark:text-gray-300 text-center">
                         <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#home" onClick={toggleMenu}>Home</a></li>
-                        <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#service" onClick={toggleMenu}>Services</a></li>
-                        <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#skills" onClick={toggleMenu}>Skills</a></li>
+                        <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#home" onClick={toggleMenu}>About</a></li>
+                        <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#experience" onClick={toggleMenu}>Experience</a></li>
                         <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#project" onClick={toggleMenu}>Project</a></li>
                         <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#contact" onClick={toggleMenu}>Contact</a></li>
                     </ul>

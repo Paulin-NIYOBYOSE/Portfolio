@@ -6,22 +6,22 @@ export default function ExperienceSection() {
 
     const experiences = [
         {
-            title: 'IS Tech',
+            title: 'Kick side Rwanda',
             role: 'Frontend Developer',
-            duration: '2024 - Present',
+            duration: 'Aug 2024 - Present',
             description: [
-                'Developed web apps for different organizations',
+                'Developed beautiful websites such as e-commerce, real estate,..',
                 'Collaborated with backend developers to develop complex solutions',
             ],
             icon: <FaBriefcase />,
         },
         {
-            title: 'D-Tech Systems',
-            role: 'Frontend Developer',
-            duration: '2024 - Present',
+            title: 'IS TECH',
+            role: 'Full stack Developer',
+            duration: 'Apr 2024 - Present',
             description: [
-                'Developed web apps for different organizations',
-                'Collaborated with backend developers to develop complex solutions',
+                'Developed beautiful e-commerce website for selling tech procducts such as phone',
+                'Integrated e-commerce backend with java and PostgreSQL for the database',
             ],
             icon: <FaBriefcase />,
         },
