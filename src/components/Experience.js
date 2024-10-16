@@ -6,8 +6,19 @@ export default function ExperienceSection() {
 
     const experiences = [
         {
+            title: 'IS Tech',
+            role: 'Frontend Developer',
+            duration: '2024 - Present',
+            description: [
+                'Developed web apps for different organizations',
+                'Collaborated with backend developers to develop complex solutions',
+            ],
+            icon: <FaBriefcase />,
+        },
+        {
             title: 'D-Tech Systems',
             role: 'Frontend Developer',
+            duration: '2024 - Present',
             description: [
                 'Developed web apps for different organizations',
                 'Collaborated with backend developers to develop complex solutions',
@@ -19,7 +30,7 @@ export default function ExperienceSection() {
     const education = [
         {
             title: 'Rwanda Coding Academy',
-            duration: '2024 - 2025',
+            duration: '2024 - 2026',
             role: 'Software Development & Embedded Systems',
             description: [],
             icon: <FaGraduationCap />,
@@ -54,6 +65,7 @@ export default function ExperienceSection() {
 
                                 <div className="ml-4">
                                     <h3 className="text-xl font-bold text-black dark:text-white">{item.title}</h3>
+                                    <h2 className='text-xs font-bold text-black dark:text-white'>{item.duration}</h2>
                                     <p className="text-sm dark:text-gray-300 text-gray-800">{item.role}</p>
                                     <ul className="dark:text-gray-300 text-gray-800">
                                         {item.description.map((desc, i) => (
@@ -80,6 +92,7 @@ export default function ExperienceSection() {
 
                                 <div className="ml-4">
                                     <h3 className="text-xl font-bold text-black dark:text-white">{item.title}</h3>
+                                    <h2 className='text-xs font-bold text-black dark:text-white'>{item.duration}</h2>
                                     <p className="text-sm dark:text-gray-300 text-gray-800">{item.role}</p>
                                 </div>
                                 <div className="flex-shrink-0">
