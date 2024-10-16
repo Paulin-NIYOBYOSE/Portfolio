@@ -130,8 +130,9 @@ const Contact = () => {
 
 
             <h3 className="flex justify-center items-center mt-10 pb-2 dark:text-white">
-                Made with ❤️ by Paulin
+                Made with <span role="img" aria-label="heart">❤️</span> by Paulin
             </h3>
+
         </section>
     );
 };

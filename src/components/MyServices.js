@@ -44,7 +44,7 @@ const MyServices = () => {
                 </p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
                     {services.map((service, index) => (
-                        <div key={index} className="bg-gray-100 dark:bg-gray-800 border  border-purple-300 dark:border-indigo-500  p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 my-4">
+                        <div key={index} className="bg-gray-100 sm:h-[13rem] dark:bg-gray-800 border  border-purple-300 dark:border-indigo-500  p-6 rounded-lg shadow-md transition-transform transform hover:scale-105 my-4 sm:flex sm:flex-col items-center justify-center">
                             <div className="flex justify-center mb-4">
                                 {service.icon}
                             </div>

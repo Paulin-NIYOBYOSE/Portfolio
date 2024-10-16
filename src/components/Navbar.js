@@ -44,8 +44,8 @@ const NavBar = () => {
                 <div className="hidden lg:flex flex-row gap-5 items-cente border h-14 w-[28rem] items-center justify-center rounded-[2rem] border-indigo-500">
                     <ul className="flex space-x-6 text-gray-600 dark:text-gray-300">
                         <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#home">Home</a></li>
-                        <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#service">Services</a></li>
-                        <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#skills">Skills</a></li>
+                        <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#about">About</a></li>
+                        <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#experience">Experience</a></li>
                         <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#project">Project</a></li>
                         <li className="hover:text-purple-600 dark:hover:text-indigo-400"><a href="#contact">Contact</a></li>
                     </ul>
