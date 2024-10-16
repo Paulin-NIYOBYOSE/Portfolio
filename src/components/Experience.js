@@ -29,12 +29,18 @@ export default function ExperienceSection() {
 
     const education = [
         {
-            title: 'Rwanda Coding Academy',
-            duration: '2024 - 2026',
-            role: 'Software Development & Embedded Systems',
-            description: [],
+            title: 'Ecole Des Sciences Des Musanze',
+            duration: '2020 - 2023',
+            role: 'Ordinary level education',
             icon: <FaGraduationCap />,
         },
+        {
+            title: 'Rwanda Coding Academy',
+            duration: '2024 - 2026',
+            role: 'High shcool deploma in Software Programming & Embedded Systems',
+            icon: <FaGraduationCap />,
+        },
+
     ];
 
     return (
