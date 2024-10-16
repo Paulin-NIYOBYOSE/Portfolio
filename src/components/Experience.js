@@ -70,12 +70,12 @@ export default function ExperienceSection() {
                             <div key={index} className="flex items-start mb-10 lg:ml-[150px]">
 
                                 <div className="ml-4">
-                                    <h3 className="text-xl font-bold text-black dark:text-white">{item.title}</h3>
-                                    <h2 className='text-xs font-bold text-black dark:text-white'>{item.duration}</h2>
-                                    <p className="text-sm dark:text-gray-300 text-gray-800">{item.role}</p>
-                                    <ul className="dark:text-gray-300 text-gray-800">
+                                    <h3 className="text-xl lg:text-2xl text-black dark:text-white font-bold">{item.title}</h3>
+                                    <h2 className="text-xs text-black dark:text-white">{item.duration}</h2>
+                                    <p className="text-sm dark:text-gray-300 text-gray-800 font-bold">{item.role}</p>
+                                    <ul className="dark:text-gray-300 text-gray-800 ">
                                         {item.description.map((desc, i) => (
-                                            <li key={i} className="list-disc list-inside">
+                                            <li key={i} className="list-disc list-inside font-normal">
                                                 {desc}
                                             </li>
                                         ))}
