@@ -45,7 +45,7 @@ const HeroSection = () => {
                     </a>
                 </div>
             </div>
-            <div className="w-full md:w-1/3 md:mt-20 mb-10 md:mr-5 border-[10px] border-indigo-500 rounded-lg">
+            <div className="w-full lg:w-1/3 lg:mt-20 mb-10 md:mr-5 border-[10px] border-indigo-500 rounded-lg">
                 <img src="./paulinw.png" alt="" className="h-full w-full rounded-sm" />
             </div>
             <ScrollToTopButton />
