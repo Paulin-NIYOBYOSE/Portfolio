@@ -21,7 +21,7 @@ export default function ExperienceSection() {
             duration: 'Apr 2024 - Present',
             description: [
                 'Developed beautiful e-commerce website for selling tech procducts such as phone',
-                'Integrated e-commerce backend with java and PostgreSQL for the database',
+                'Integrated e-commerce backend with java and PostgreSQL',
             ],
             icon: <FaBriefcase />,
         },

@@ -4,7 +4,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const HeroSection = () => {
     return (
-        <section className="hero flex flex-col gap-5 md:flex-row" id="home">
+        <section className="hero flex flex-col gap-5 lg:flex-row" id="home">
             <div className="container mx-auto text-center flex flex-col justify-center items-center mt-20 md:mt-auto md:min-h-screen w-full  md:w-2/3">
                 <h1 className="font-poppins text-xl md:text-5xl font-bold text-black mb-4 dark:text-white">
                     Hi, I am <span className="dark:text-indigo-400 text-gray-600">NIYOBYOSE Paulin.</span>
