@@ -2,21 +2,18 @@ import React, { useState, useEffect } from 'react';
 import { FaSun, FaMoon, FaBars, FaTimes } from 'react-icons/fa';
 
 const NavBar = () => {
-    // State for mobile menu toggle
     const [menuOpen, setMenuOpen] = useState(false);
 
-    // State for dark mode toggle
+
     const [darkMode, setDarkMode] = useState(() => {
         const savedTheme = localStorage.getItem("theme");
         return savedTheme ? savedTheme === "dark" : true;
     });
 
-    // Function to toggle the mobile menu
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
 
-    // Handle dark mode toggle
     useEffect(() => {
         if (darkMode) {
             document.documentElement.classList.add("dark");
@@ -27,7 +24,6 @@ const NavBar = () => {
         }
     }, [darkMode]);
 
-    // Function to toggle theme
     const toggleTheme = () => {
         setDarkMode(!darkMode);
     };
