@@ -20,6 +20,16 @@ const projects = [
         image: "./istech.png"
     },
     {
+        title: "Foodie App",
+        description: "This is a restaurant app that contains different sections such as where clients can order food , the services the restaurant provides,..",
+        stack: ["HTML", "JAVASCRIPT", "BOOTSTRAP"],
+        githubLink: "https://github.com/Paulin-NIYOBYOSE/Foodie-app",
+        liveLink: "https://foodie-app-np.vercel.app/",
+        image: "./foodie.png"
+    },
+
+
+    {
         title: "FXMA",
         description: "An online platform for educating people on forex trading, my trading bot, and signals",
         stack: ["Next.js", "Python", "Java"],
