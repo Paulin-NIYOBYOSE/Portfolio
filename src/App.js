@@ -5,9 +5,10 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import NavBar from "./components/Navbar";
 import MyServices from "./components/MyServices";
+import Experience from "./components/Experience";
 import './App.css';
 import './index.css';
-import Experience from "./components/Experience";
+
 
 
 function App() {
