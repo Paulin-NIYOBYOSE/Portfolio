@@ -27,6 +27,14 @@ const projects = [
         liveLink: "https://foodie-app-np.vercel.app/",
         image: "./foodie.png"
     },
+    {
+        title: "REstate",
+        description: "Platform connecting people who want to buy/sell properties",
+        stack: ["React.js", "Tailwind CSS",],
+        githubLink: "https://github.com/Paulin-NIYOBYOSE/Real_estate",
+        liveLink: "https://rwandaestate.vercel.app/",
+        image: "./Real.png"
+    },
 
 
     {
