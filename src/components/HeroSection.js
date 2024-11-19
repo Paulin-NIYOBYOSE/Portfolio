@@ -9,9 +9,9 @@ const HeroSection = () => {
 
     useEffect(() => {
         const roles = [
-            "A Fullstack Software Developer",
             "A Machine Learning Engineer",
             "A Python Developer",
+            "A Web Developer",
         ];
 
         const role = roles[currentRoleIndex];
