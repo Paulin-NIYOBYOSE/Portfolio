@@ -34,11 +34,15 @@
   overflow: hidden;
 }
 
-#tsparticles {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1; /* Ensures particles are behind the content */
+.blink-caret {
+  display: inline-block;
+  width: 10px;
+  height: 20px;
+  animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
 }

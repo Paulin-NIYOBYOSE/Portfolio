@@ -1,88 +1,58 @@
-import React, { useCallback } from "react";
-import Particles from "react-tsparticles";
-import { loadFull } from "tsparticles";
+import React, { useState, useEffect } from "react";
 import ScrollToTopButton from "./ScrollToTopButton";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const HeroSection = () => {
-    // Initialize particles
-    const particlesInit = useCallback(async (engine) => {
-        await loadFull(engine); // Loads all particle features
-    }, []);
+    const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
+    const [roleText, setRoleText] = useState("");
+    const [isTyping, setIsTyping] = useState(true);
 
-    const particlesLoaded = useCallback(async (container) => {
-        console.log(container); // Optional: check if particles are loaded
-    }, []);
+    useEffect(() => {
+        const roles = [
+            "A Fullstack Software Developer",
+            "A Machine Learning Engineer",
+            "A Python Developer",
+        ];
+
+        const role = roles[currentRoleIndex];
+        let index = 0;
+        let currentText = "";
+
+        setRoleText(""); // Clear the role text before starting
+
+        const typingInterval = setInterval(() => {
+            if (index < role.length) {
+                currentText += role[index];
+                setRoleText(currentText);
+                index += 1;
+            } else {
+                clearInterval(typingInterval);
+                setIsTyping(false);
+                setTimeout(() => {
+                    setIsTyping(true);
+                    setCurrentRoleIndex((prevIndex) => (prevIndex + 1) % roles.length);
+                }, 1000);
+            }
+        }, 150);
+
+        return () => clearInterval(typingInterval);
+    }, [currentRoleIndex]);
 
     return (
         <section className="hero flex flex-col gap-5 lg:flex-row relative" id="home">
-            {/* Particles component */}
-            <Particles
-                id="tsparticles"
-                init={particlesInit}
-                loaded={particlesLoaded}
-                options={{
-                    background: {
-                        color: {
-                            value: "#0d47a1", // Set a color or leave transparent
-                        },
-                    },
-                    fpsLimit: 120,
-                    interactivity: {
-                        events: {
-                            onClick: { enable: true, mode: "push" },
-                            onHover: { enable: true, mode: "repulse" },
-                            resize: true,
-                        },
-                        modes: {
-                            push: { quantity: 4 },
-                            repulse: { distance: 200, duration: 0.4 },
-                        },
-                    },
-                    particles: {
-                        color: { value: "#ffffff" },
-                        links: {
-                            color: "#ffffff",
-                            distance: 150,
-                            enable: true,
-                            opacity: 0.5,
-                            width: 1,
-                        },
-                        collisions: { enable: true },
-                        move: {
-                            direction: "none",
-                            enable: true,
-                            outModes: { default: "bounce" },
-                            random: false,
-                            speed: 2,
-                            straight: false,
-                        },
-                        number: {
-                            density: { enable: true, area: 800 },
-                            value: 80,
-                        },
-                        opacity: { value: 0.5 },
-                        shape: { type: "circle" },
-                        size: { value: { min: 1, max: 5 } },
-                    },
-                    detectRetina: true,
-                }}
-            />
-
             <div className="container mx-auto text-center flex flex-col justify-center items-center mt-20 md:mt-auto md:min-h-screen w-full md:w-2/3">
                 <h1 className="font-poppins text-xl md:text-5xl font-bold text-black mb-4 dark:text-white">
                     Hi, I am <span className="dark:text-indigo-400 text-gray-600">NIYOBYOSE Paulin.</span>
                 </h1>
-
                 <h2 className="font-poppins text-2xl md:text-3xl font-semibold text-indigo-300 mb-6">
-                    A Fullstack Software Developer
+                    {roleText}
+                    {isTyping && <span className="blink-caret">|</span>}
                 </h2>
                 <p className="max-w-3xl mx-auto text-black font-poppins text-lg dark:text-indigo-300 mb-8">
                     I'm a full-stack software developer based in Rwanda, currently working on FXMA. I specialize in Software Programming and Embedded Systems at the Rwanda Coding Academy.
                     With a strong focus on ML, Python, and JAVA, I enjoy tackling complex problems and building efficient, scalable applications.
                     Take a look at my projects, and feel free to reach out if you’d like to connect!
                 </p>
-
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 md:gap-0 justify-items-center">
                     <a
                         href="/Paulin.pdf"
