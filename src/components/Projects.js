@@ -6,7 +6,7 @@ const projects = [
     {
         title: "Pip hunter",
         description: "Python-powered forex chart analyzer that helps traders track market trends and spot A+ opportunities with real-time data.",
-        stack: ["Python", "Java", "Next.js"],
+        stack: ["Python", "Next.js"],
         githubLink: "https://github.com/Paulin-NIYOBYOSE/Pip-hunter",
         liveLink: "https://github.com/Paulin-NIYOBYOSE",
         image: "./forex.png"
