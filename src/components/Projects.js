@@ -4,6 +4,14 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 
 const projects = [
     {
+        title: "Pip hunter",
+        description: "Python-powered forex chart analyzer that helps traders track market trends and spot A+ opportunities with real-time data.",
+        stack: ["Python", "Java", "Next.js"],
+        githubLink: "https://github.com/Paulin-NIYOBYOSE/Pip-hunter",
+        liveLink: "https://github.com/Paulin-NIYOBYOSE",
+        image: "./forex.png"
+    },
+    {
         title: "Cineflix",
         description: "A Next-Gen Netflix Clone with Enhanced Features",
         stack: ["React", "Tailwind CSS"],
@@ -53,6 +61,7 @@ const projects = [
         liveLink: "https://github.com/Paulin-NIYOBYOSE",
         image: "./fxma.png"
     },
+
 ];
 
 const Projects = () => {
