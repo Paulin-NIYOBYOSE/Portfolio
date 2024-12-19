@@ -4,7 +4,7 @@ const skills = ["Python", "JAVA", "TypeScript", "MQL5", "Tailwind CSS", "Next.js
 
 const Skills = () => {
     return (
-        <section className="py-20 bg-white dark:bg-gray-800" id="skills">
+        <section className=" bg-white dark:bg-gray-800" id="skills">
             <h2 className="text-center text-3xl md:text-5xl font-bold mb-5 dark:text-white">Skills</h2>
             <div className="flex flex-wrap justify-center gap-4 px-5 md:px-[400px]">
                 {skills.map((skill, index) => (
