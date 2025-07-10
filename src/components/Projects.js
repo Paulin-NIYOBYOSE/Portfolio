@@ -36,6 +36,14 @@ const projects = [
         liveLink: "https://github.com/Paulin-NIYOBYOSE/joblift",
         image: "/fxma.png"
     },
+    {
+        title: "FXMA",
+        description: "An online learning platform for educating people about online trading: cryptocurrencies, forex, futures, etc with interactive courses",
+        stack: ["Next.js", "Python", "Java"],
+        githubLink: "https://github.com/Paulin-NIYOBYOSE/FOREX-MINERS-ACADEMY",
+        liveLink: "https://mobsters-academy.vercel.app/",
+        image: "/fxma.png"
+    },
     
     // Earlier Projects (2023-2024)
     {
@@ -62,14 +70,7 @@ const projects = [
         liveLink: "https://cineflix0-movies.vercel.app/",
         image: "/cineflix.png"
     },
-    {
-        title: "FXMA",
-        description: "An online learning platform for educating people about online trading: cryptocurrencies, forex, futures, etc with interactive courses",
-        stack: ["Next.js", "Python", "Java"],
-        githubLink: "https://github.com/Paulin-NIYOBYOSE/FOREX-MINERS-ACADEMY",
-        liveLink: "https://github.com/Paulin-NIYOBYOSE/FOREX-MINERS-ACADEMY",
-        image: "/fxma.png"
-    }
+
 ];
 
 const Projects = () => {
