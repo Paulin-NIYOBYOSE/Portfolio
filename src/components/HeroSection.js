@@ -142,6 +142,7 @@ const HeroSection = () => {
                     <div className="absolute top-1/2 -right-2 w-8 h-8 bg-gradient-to-br from-indigo-600 to-purple-500 rounded-full flex items-center justify-center text-white shadow-lg animate-float opacity-80" style={{animationDelay: '0.5s'}}>
                         <span className="text-xs font-bold">JS</span>
                     </div>
+                    
                 </div>
             </div>
             

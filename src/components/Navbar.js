@@ -27,7 +27,7 @@ const NavBar = () => {
     // Scroll spy functionality
     useEffect(() => {
         const handleScroll = () => {
-            const sections = ['home', 'project', 'skills', 'experience', 'service', 'contact'];
+            const sections = ['home', 'project', 'skills', 'experience', 'service', 'reviews', 'contact'];
             const scrollPosition = window.scrollY + 100; // Offset for better detection
 
             for (let i = sections.length - 1; i >= 0; i--) {
@@ -106,6 +106,11 @@ const NavBar = () => {
                             </a>
                         </li>
                         <li>
+                            <a href="#reviews" className={getNavLinkClass('reviews')}>
+                                Reviews
+                            </a>
+                        </li>
+                        <li>
                             <a href="#contact" className={getNavLinkClass('contact')}>
                                 Contact
                             </a>
@@ -158,6 +163,11 @@ const NavBar = () => {
                         <li>
                             <a href="#service" onClick={toggleMenu} className={getMobileNavLinkClass('service')}>
                                 Services
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#reviews" onClick={toggleMenu} className={getMobileNavLinkClass('reviews')}>
+                                Reviews
                             </a>
                         </li>
                         <li>

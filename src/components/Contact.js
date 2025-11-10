@@ -97,61 +97,13 @@ const Contact = () => {
                         </div>
                     </div>
                 </div>
-                
-                <div className="mt-16 text-center">
-                    <h3 className="text-xl font-semibold mb-8 text-gray-900 dark:text-white">Connect With Me</h3>
-                    <div className="flex justify-center gap-4 flex-wrap">
-                        <a
-                            href="mailto:niyobyosepaulin20@gmail.com"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group p-4 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-500 hover:text-white transition-all duration-300 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110"
-                        >
-                            <MdOutlineEmail className="text-xl" />
-                        </a>
-                        <a
-                            href="https://www.instagram.com/paulinwalker/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group p-4 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-500 hover:text-white transition-all duration-300 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110"
-                        >
-                            <FaInstagram className="text-xl" />
-                        </a>
-                        <a
-                            href="https://x.com/Paulin_walker10"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group p-4 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-500 hover:text-white transition-all duration-300 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110"
-                        >
-                            <FaTwitter className="text-xl" />
-                        </a>
-                        <a
-                            href="https://www.linkedin.com/in/niyobyose-paulin-5a8497304/"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group p-4 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-500 hover:text-white transition-all duration-300 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110"
-                        >
-                            <FaLinkedin className="text-xl" />
-                        </a>
-                        <a
-                            href="https://github.com/Paulin-NIYOBYOSE"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="group p-4 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-500 hover:text-white transition-all duration-300 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110"
-                        >
-                            <FaGithub className="text-xl" />
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <div className="mt-16 pt-8 border-t border-gray-200/50 dark:border-gray-700/50 text-center">
+                            <div className="mt-16 pt-8 border-t border-gray-200/50 dark:border-gray-700/50 text-center">
                 <div className="mb-8">
                     <h3 className="text-xl font-semibold mb-4 text-gray-900 dark:text-white flex items-center justify-center gap-2">
-                        <span>☕</span> Buy Me a Coffee
+                        <span>☕</span> Fuel the grind with crypto
                     </h3>
                     <p className="text-gray-600 dark:text-gray-400 mb-6">
-                        Not allergic to coffee! Support my work with crypto donations
+                        Not allergic to coffee!
                     </p>
                     
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto">
@@ -217,7 +169,53 @@ const Contact = () => {
                     </div>
                 </div>
             </div>
-
+                
+                <div className="mt-16 text-center">
+                    <h3 className="text-xl font-semibold mb-8 text-gray-900 dark:text-white">Connect With Me</h3>
+                    <div className="flex justify-center gap-4 flex-wrap">
+                        <a
+                            href="mailto:niyobyosepaulin20@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group p-4 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-500 hover:text-white transition-all duration-300 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110"
+                        >
+                            <MdOutlineEmail className="text-xl" />
+                        </a>
+                        <a
+                            href="https://www.instagram.com/paulinwalker/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group p-4 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-500 hover:text-white transition-all duration-300 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110"
+                        >
+                            <FaInstagram className="text-xl" />
+                        </a>
+                        <a
+                            href="https://x.com/Paulin_walker10"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group p-4 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-500 hover:text-white transition-all duration-300 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110"
+                        >
+                            <FaTwitter className="text-xl" />
+                        </a>
+                        <a
+                            href="https://www.linkedin.com/in/niyobyose-paulin-5a8497304/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group p-4 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-500 hover:text-white transition-all duration-300 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110"
+                        >
+                            <FaLinkedin className="text-xl" />
+                        </a>
+                        <a
+                            href="https://github.com/Paulin-NIYOBYOSE"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="group p-4 bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 text-indigo-600 dark:text-indigo-400 hover:bg-indigo-500 hover:text-white transition-all duration-300 rounded-full shadow-lg hover:shadow-xl transform hover:scale-110"
+                        >
+                            <FaGithub className="text-xl" />
+                        </a>
+                    </div>
+                </div>
+            </div>
         </section>
     );
 };
