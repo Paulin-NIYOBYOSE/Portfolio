@@ -9,7 +9,7 @@ export default function ExperienceSection() {
         {
             title:"Digital Cost Estimation",
             role:"BIM specialist",
-            duration:"Sept 2024 - Present",
+            duration:"Sept 2025 - Present",
             description:[
             'Developed modern platforms for employee management, project budget planning and construction cost estimation',
             'Developed useful plugins used in Revit and Archicad to export and report information from those applications',
