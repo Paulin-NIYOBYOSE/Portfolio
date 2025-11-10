@@ -8,6 +8,7 @@ import MyServices from "./components/MyServices";
 import Experience from "./components/Experience";
 import './App.css';
 import './index.css';
+import Review from "./components/Review";
 
 
 
@@ -20,6 +21,7 @@ function App() {
       <Skills />
       <Experience />
       <MyServices />
+      <Review/>
       <Contact />
 
     </div>
