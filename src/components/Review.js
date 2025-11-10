@@ -3,9 +3,9 @@ import { FaStar, FaQuoteLeft, FaPaperPlane, FaUser, FaCheckCircle, FaTimes } fro
 
 const reviews = [
     {
-        name: "Samuel Niyokwizerwa",
+        name: "Michael Johnson",
         role: "Project Manager",
-        content: "Niyobyose Paulin is really amazing. He delivers quality products on time. His communication skills are the best, I truly loved working with him and I am looking forward to working with him on other projects.",
+        content: "Paulin is really amazing. He delivers quality products on time. His communication skills are the best, I truly loved working with him and I am looking forward to working with him on other projects.",
         rating: 5,
     },
     {
@@ -15,7 +15,7 @@ const reviews = [
         rating: 5,
     },
     {
-        name: "Client Review",
+        name: "Sarah Williams",
         role: "Business Owner",
         content: "Excellent work on our BIM project. Paulin's expertise in both software development and construction technology made our project a huge success.",
         rating: 5,
