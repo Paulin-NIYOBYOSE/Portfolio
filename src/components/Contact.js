@@ -24,7 +24,7 @@ const Contact = () => {
                         </div>
                         <h4 className="font-bold text-xl mb-3 text-gray-900 dark:text-white group-hover:text-indigo-600 dark:group-hover:text-indigo-400 transition-colors duration-300">Address</h4>
                         <p className="text-gray-600 dark:text-gray-400">
-                            Mbugangari, Gisenyi, Rubavu, Rwanda
+                            Rubavu, Rwanda
                         </p>
                     </div>
                     
@@ -89,7 +89,7 @@ const Contact = () => {
                             <iframe
                                 className="w-full h-64"
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15997.154757118034!2d29.257235890346943!3d-1.5509722631933052!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x19d40f3c517c3c15%3A0xe6eb00325eb2ec3c!2sGisenyi%2C%20Rubavu%2C%20Rwanda!5e0!3m2!1sen!2sus!4v1697499831670!5m2!1sen!2sus"
-                                title="Gisenyi, Rubavu, Rwanda Map"
+                                title="Rubavu, Rwanda Map"
                                 style={{ border: '0' }}
                                 allowFullScreen
                                 loading="lazy"

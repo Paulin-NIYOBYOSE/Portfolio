@@ -6,10 +6,23 @@ export default function ExperienceSection() {
     const [activeTab, setActiveTab] = useState('experience');
 
     const experiences = [
+
+        {
+            title:"ACORN APPRAISALS ",
+            role:"Fullstack software developer",
+            duration:"Sept 2025 - Present",
+            description:[
+            'Developed a comprehensive Smart Evaluation system for structured reporting, enabling creation of chapters and sub-chapters',
+            'Implemented interactive charts, tables, and visual assets to enhance report clarity and analytics.',
+            'Designed a flexible, modular system to support collaboration and scalable report generation',
+            'Built a modern, responsive business website'
+            ],
+            icon: <FaBriefcase />,
+        },
         {
             title:"Digital Cost Estimation",
             role:"BIM specialist",
-            duration:"Sept 2025 - Present",
+            duration:"Sept 2024 - Present",
             description:[
             'Developed modern platforms for employee management, project budget planning and construction cost estimation',
             'Developed useful plugins used in Revit and Archicad to export and report information from those applications',
@@ -20,7 +33,7 @@ export default function ExperienceSection() {
         {
             title: 'Kick side Rwanda',
             role: 'Frontend Developer',
-            duration: 'Aug 2024 - Present',
+            duration: 'Aug 2024 - Dec 2024',
             description: [
                 'Developed modern websites including the kickside official newspaper publishing site',
                 'Collaborated with backend developers to create complex construction and software solutions',
@@ -31,7 +44,7 @@ export default function ExperienceSection() {
         {
             title: 'IS TECH',
             role: 'Full Stack Developer',
-            duration: 'Apr 2024 - Present',
+            duration: 'Apr 2024 - Jun 2024',
             description: [
                 'Developed comprehensive e-commerce platform for selling electronic devices and tech products',
                 'Integrated robust backend systems using Java and PostgreSQL for inventory management',

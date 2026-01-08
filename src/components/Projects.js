@@ -20,6 +20,14 @@ const projects = [
         liveLink: "https://constructioncost.vercel.app/",
         image: "/constructticker.png"
     },
+     {
+        title: "Smart evaluation",
+        description: "A web application for creating smart evaluation reports, enabling users to structure content into chapters and sections, insert charts and assets, collaborate, and export professional documents in PDF and Word formats.",
+        stack: ["React Native", "NativeWind"],
+        githubLink: "https://github.com/Paulin-NIYOBYOSE",
+        liveLink: "https://reportflowv2.vercel.app/",
+        image: "/smart.png"
+    },
     {
         title: "Akarongo Fashion",
         description: "A mobile application built with React Native for selling clothes online. It provides users with a clean interface to browse products, view details, add items to cart, and place orders",
@@ -28,6 +36,7 @@ const projects = [
         liveLink: "https://github.com/Paulin-NIYOBYOSE/akarongo-fashion",
         image: "/akarongo.png"
     },
+    
     {
         title: "Joblift",
         description: "This application connects job seekers and recruiters, helping people find jobs easily with advanced matching algorithms",
