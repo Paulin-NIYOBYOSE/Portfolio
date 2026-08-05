@@ -1,11 +1,60 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useMemo } from "react";
 import ScrollToTopButton from "./ScrollToTopButton";
+import Particles, { initParticlesEngine } from "@tsparticles/react";
+import { loadAll } from "@tsparticles/all";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
 const HeroSection = () => {
     const [currentRoleIndex, setCurrentRoleIndex] = useState(0);
     const [roleText, setRoleText] = useState("");
     const [isTyping, setIsTyping] = useState(true);
+    const [particlesReady, setParticlesReady] = useState(false);
+
+    useEffect(() => {
+        initParticlesEngine(async (engine) => {
+            await loadAll(engine);
+        }).then(() => setParticlesReady(true));
+    }, []);
+
+    const particlesOptions = useMemo(
+        () => ({
+            fullScreen: { enable: false },
+            fpsLimit: 60,
+            interactivity: {
+                events: {
+                    onHover: { enable: true, mode: "grab" },
+                    onClick: { enable: true, mode: "push" },
+                    resize: true,
+                },
+                modes: {
+                    grab: { distance: 140, links: { opacity: 0.4 } },
+                    push: { quantity: 2 },
+                },
+            },
+            particles: {
+                color: { value: ["#6366f1", "#a855f7"] },
+                links: {
+                    color: "#818cf8",
+                    distance: 130,
+                    enable: true,
+                    opacity: 0.2,
+                    width: 1,
+                },
+                move: {
+                    enable: true,
+                    speed: 0.6,
+                    direction: "none",
+                    outModes: { default: "bounce" },
+                },
+                number: { value: 45, density: { enable: true, area: 900 } },
+                opacity: { value: 0.35 },
+                shape: { type: "circle" },
+                size: { value: { min: 1, max: 3 } },
+            },
+            detectRetina: true,
+        }),
+        []
+    );
 
     useEffect(() => {
         const roles = [
@@ -40,6 +89,10 @@ const HeroSection = () => {
 
     return (
         <section className="hero flex flex-col gap-8 lg:flex-row relative min-h-screen bg-gradient-to-br from-white via-indigo-50/30 to-purple-50/20 dark:from-gray-900 dark:via-gray-800 dark:to-indigo-900/20" id="home">
+            {particlesReady && (
+                <Particles id="tsparticles" options={particlesOptions} className="absolute inset-0" />
+            )}
+
             {/* Animated background elements */}
             <div className="absolute inset-0 overflow-hidden pointer-events-none">
                 <div className="absolute top-20 left-10 w-72 h-72 bg-indigo-300/10 rounded-full blur-3xl animate-pulse"></div>

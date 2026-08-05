@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FaBriefcase, FaGraduationCap } from 'react-icons/fa';
+import Reveal from './Reveal';
 
 
 export default function ExperienceSection() {
@@ -59,13 +60,13 @@ export default function ExperienceSection() {
     const education = [
         {
             title: 'Rwanda Coding Academy',
-            duration: '2024 - Present',
+            duration: 'Sep 2023 - July 2026',
             role: 'High School Diploma in Software Programming & Embedded Systems',
             icon: <FaGraduationCap />,
         },
         {
             title: 'Ecole Des Sciences Des Musanze',
-            duration: '2020 - 2023',
+            duration: 'Jan 2020 - Aug 2023',
             role: 'Ordinary Level Education',
             icon: <FaGraduationCap />,
         },
@@ -74,7 +75,7 @@ export default function ExperienceSection() {
     return (
         <section className="py-20 bg-gradient-to-b from-white to-gray-50/50 dark:from-gray-800 dark:to-gray-900" id='experience'>
             <div className="container mx-auto px-4">
-                <div className="text-center mb-16">
+                <Reveal className="text-center mb-16">
                     <h2 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                         Experience & Education
                     </h2>
@@ -82,8 +83,8 @@ export default function ExperienceSection() {
                         My professional journey and educational background
                     </p>
                     <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto mt-4 rounded-full"></div>
-                </div>
-                
+                </Reveal>
+
                 <div className="flex justify-center space-x-2 mb-12">
                     <button
                         className={`px-8 py-3 font-semibold rounded-full transition-all duration-300 ${
@@ -115,7 +116,7 @@ export default function ExperienceSection() {
                             
                             <div className="space-y-12">
                                 {experiences.map((item, index) => (
-                                    <div key={index} className="group relative flex items-start">
+                                    <Reveal key={index} delay={index * 100} className="group relative flex items-start">
                                         {/* Timeline Node */}
                                         <div className="flex-shrink-0 relative z-10">
                                             <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 p-4 rounded-full text-white shadow-lg group-hover:scale-110 transition-transform duration-300 border-4 border-white dark:border-gray-800">
@@ -152,7 +153,7 @@ export default function ExperienceSection() {
                                             {/* Bottom accent line */}
                                             <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-b-2xl"></div>
                                         </div>
-                                    </div>
+                                    </Reveal>
                                 ))}
                             </div>
                         </div>
@@ -162,10 +163,10 @@ export default function ExperienceSection() {
                         <div className="relative">
                             {/* Vertical Timeline Line */}
                             <div className="absolute left-8 top-0 bottom-0 w-0.5 bg-gradient-to-b from-indigo-500 to-purple-600"></div>
-                            
+
                             <div className="space-y-12">
                                 {education.map((item, index) => (
-                                    <div key={index} className="group relative flex items-start">
+                                    <Reveal key={index} delay={index * 100} className="group relative flex items-start">
                                         {/* Timeline Node */}
                                         <div className="flex-shrink-0 relative z-10">
                                             <div className="w-16 h-16 bg-gradient-to-br from-indigo-500 to-purple-600 p-4 rounded-full text-white shadow-lg group-hover:scale-110 transition-transform duration-300 border-4 border-white dark:border-gray-800">
@@ -193,7 +194,7 @@ export default function ExperienceSection() {
                                             {/* Bottom accent line */}
                                             <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-b-2xl"></div>
                                         </div>
-                                    </div>
+                                    </Reveal>
                                 ))}
                             </div>
                         </div>

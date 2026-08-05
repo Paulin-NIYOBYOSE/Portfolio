@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { FaStar, FaQuoteLeft, FaPaperPlane, FaUser, FaCheckCircle, FaTimes } from 'react-icons/fa';
+import Reveal from './Reveal';
 
 const reviews = [
     {
@@ -73,7 +74,7 @@ const Review = () => {
     return (
         <section className="py-20 bg-gradient-to-b from-white to-gray-50/50 dark:from-gray-800 dark:to-gray-900 overflow-hidden" id="reviews">
             <div className="container mx-auto px-4">
-                <div className="text-center mb-16">
+                <Reveal className="text-center mb-16">
                     <h2 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                         Client Reviews
                     </h2>
@@ -81,12 +82,12 @@ const Review = () => {
                         What clients say about working with me
                     </p>
                     <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto mt-4 rounded-full"></div>
-                </div>
+                </Reveal>
 
                 {/* Reviews Grid */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto mb-16">
                     {reviews.map((review, index) => (
-                        <div key={index} className="group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-2xl">
+                        <Reveal key={index} delay={(index % 3) * 100} className="group relative bg-white/80 dark:bg-gray-800/80 backdrop-blur-xl rounded-2xl shadow-xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden transition-all duration-500 hover:scale-105 hover:shadow-2xl">
                             {/* Background decoration */}
                             <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-purple-500/5 group-hover:from-indigo-500/10 group-hover:to-purple-500/10 transition-all duration-300"></div>
                             <div className="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-indigo-500/10 to-purple-500/10 rounded-full blur-2xl group-hover:blur-xl transition-all duration-300"></div>
@@ -127,12 +128,12 @@ const Review = () => {
 
                             {/* Bottom accent line */}
                             <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-                        </div>
+                        </Reveal>
                     ))}
                 </div>
 
                 {/* Leave a Review Section */}
-                <div className="max-w-2xl mx-auto">
+                <Reveal className="max-w-2xl mx-auto">
                     <div className="text-center mb-8">
                         <h3 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900 dark:text-white">
                             Share Your Experience
@@ -241,7 +242,7 @@ const Review = () => {
                             </div>
                         )}
                     </div>
-                </div>
+                </Reveal>
             </div>
 
             {/* Success Toast Notification */}

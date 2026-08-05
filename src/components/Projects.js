@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaGithub } from "react-icons/fa6";
 import { FaExternalLinkAlt, FaChevronDown, FaChevronUp } from "react-icons/fa";
+import Reveal from "./Reveal";
 
 const projects = [
     // Most Recent Projects (2024-2025) - BIM & Construction Focus
@@ -90,7 +91,7 @@ const Projects = () => {
     return (
         <section className="py-20 bg-gradient-to-b from-gray-50/50 to-white dark:from-gray-900 dark:to-gray-800" id="project">
             <div className="container mx-auto px-4">
-                <div className="text-center mb-16">
+                <Reveal className="text-center mb-16">
                     <h2 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                         Featured Projects
                     </h2>
@@ -98,11 +99,11 @@ const Projects = () => {
                         Discover my latest work and creative solutions
                     </p>
                     <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto mt-4 rounded-full"></div>
-                </div>
-                
+                </Reveal>
+
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 px-4 md:px-8">
                     {displayedProjects.map((project, index) => (
-                        <div key={index} className="group relative bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden transition-all duration-500 hover:scale-105">
+                        <Reveal key={index} delay={(index % 3) * 100} className="group relative bg-white dark:bg-gray-800/50 backdrop-blur-sm rounded-2xl shadow-lg hover:shadow-2xl border border-gray-200/50 dark:border-gray-700/50 overflow-hidden transition-all duration-500 hover:scale-105">
                             {/* Gradient overlay for card */}
                             <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             
@@ -159,10 +160,10 @@ const Projects = () => {
                                 {/* Bottom gradient line */}
                                 <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
                             </div>
-                        </div>
+                        </Reveal>
                     ))}
                 </div>
-                
+
                 {/* View More Projects Button */}
                 {projects.length > initialProjectsCount && (
                     <div className="text-center mt-12">

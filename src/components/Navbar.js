@@ -9,10 +9,23 @@ const NavBar = () => {
         const savedTheme = localStorage.getItem("theme");
         return savedTheme ? savedTheme === "dark" : true;
     });
+    const [scrollProgress, setScrollProgress] = useState(0);
 
     const toggleMenu = () => {
         setMenuOpen(!menuOpen);
     };
+
+    useEffect(() => {
+        const handleProgress = () => {
+            const scrollTop = window.pageYOffset;
+            const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+            setScrollProgress(docHeight > 0 ? (scrollTop / docHeight) * 100 : 0);
+        };
+
+        window.addEventListener('scroll', handleProgress);
+        handleProgress();
+        return () => window.removeEventListener('scroll', handleProgress);
+    }, []);
 
     useEffect(() => {
         if (darkMode) {
@@ -134,6 +147,14 @@ const NavBar = () => {
                         {menuOpen ? <FaTimes size={20} className="text-gray-700 dark:text-gray-300" /> : <FaBars size={20} className="text-gray-700 dark:text-gray-300" />}
                     </button>
                 </div>
+            </div>
+
+            {/* Scroll progress indicator */}
+            <div className="h-0.5 w-full bg-transparent">
+                <div
+                    className="h-full bg-gradient-to-r from-indigo-500 to-purple-600 transition-[width] duration-150 ease-out"
+                    style={{ width: `${scrollProgress}%` }}
+                />
             </div>
 
             {/* Mobile Menu */}

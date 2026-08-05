@@ -1,5 +1,6 @@
 import React from 'react';
 import { FaCode, FaPaintBrush, FaMobileAlt, FaTools, FaComments, FaClipboardList } from 'react-icons/fa';
+import Reveal from './Reveal';
 
 const services = [
     {
@@ -38,7 +39,7 @@ const MyServices = () => {
     return (
         <section className="py-20 bg-gradient-to-b from-gray-50/50 to-white dark:from-gray-900 dark:to-gray-800" id='service'>
             <div className="container mx-auto text-center px-4">
-                <div className="mb-16">
+                <Reveal className="mb-16">
                     <h2 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
                         My Services
                     </h2>
@@ -46,11 +47,11 @@ const MyServices = () => {
                         I offer a range of services designed to meet your needs and help you succeed.
                     </p>
                     <div className="w-24 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 mx-auto mt-4 rounded-full"></div>
-                </div>
-                
+                </Reveal>
+
                 <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
                     {services.map((service, index) => (
-                        <div key={index} className="group relative bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 overflow-hidden">
+                        <Reveal key={index} delay={(index % 3) * 100} className="group relative bg-white/70 dark:bg-gray-800/70 backdrop-blur-sm border border-gray-200/50 dark:border-gray-700/50 p-8 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-500 hover:scale-105 overflow-hidden">
                             {/* Background gradient overlay */}
                             <div className="absolute inset-0 bg-gradient-to-br from-indigo-500/5 to-purple-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                             
@@ -70,7 +71,7 @@ const MyServices = () => {
                             
                             {/* Bottom accent line */}
                             <div className="absolute bottom-0 left-0 right-0 h-1 bg-gradient-to-r from-indigo-500 to-purple-500 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left"></div>
-                        </div>
+                        </Reveal>
                     ))}
                 </div>
             </div>
