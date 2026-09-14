@@ -123,8 +123,8 @@ const HeroSection = () => {
                 <div className="animate-fade-in-up delay-600">
                     <div className="flex flex-wrap justify-center gap-4 mb-8">
                         <a
-                            href="/Paulin.pdf"
-                            download="Paulin.pdf"
+                            href="/NIYOBYOSE_Paulin_Resume.pdf"
+                            download="NIYOBYOSE_Paulin_Resume.pdf"
                             className="group px-8 py-4 bg-gradient-to-r from-indigo-500 to-purple-600 text-white hover:from-indigo-600 hover:to-purple-700 transition-all duration-300 rounded-full text-center font-semibold shadow-lg hover:shadow-xl transform hover:scale-105 flex items-center gap-2"
                         >
                             <span>Download Resume</span>

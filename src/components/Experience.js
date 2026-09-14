@@ -11,7 +11,7 @@ export default function ExperienceSection() {
         {
             title:"ACORN APPRAISALS ",
             role:"Fullstack software developer",
-            duration:"Sept 2025 - Present",
+            duration:"Sep 2025 - Aug 2026",
             description:[
             'Developed a comprehensive Smart Evaluation system for structured reporting, enabling creation of chapters and sub-chapters',
             'Implemented interactive charts, tables, and visual assets to enhance report clarity and analytics.',
@@ -23,7 +23,7 @@ export default function ExperienceSection() {
         {
             title:"Digital Cost Estimation",
             role:"BIM specialist",
-            duration:"Sept 2024 - Present",
+            duration:"Sep 2024 - Jul 2026",
             description:[
             'Developed modern platforms for employee management, project budget planning and construction cost estimation',
             'Developed useful plugins used in Revit and Archicad to export and report information from those applications',
