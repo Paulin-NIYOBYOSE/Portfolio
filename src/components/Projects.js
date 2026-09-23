@@ -6,6 +6,22 @@ import Reveal from "./Reveal";
 const projects = [
     // Most Recent Projects (2024-2025) - BIM & Construction Focus
     {
+        title: "Ranga",
+        description: "A trusted platform connecting people who lose national IDs, passports, driving licenses and student IDs with the people who find them — safely, quickly, verified. Features AI-powered OCR, smart matching, identity verification, and secure rewards.",
+        stack: ["Next.js", "Tailwind CSS", "PostgreSQL", "Prisma"],
+        githubLink: "https://github.com/Paulin-NIYOBYOSE",
+        liveLink: "https://rangaaa.vercel.app/",
+        image: "/ranga.png"
+    },
+    {
+        title: "Zero QS",
+        description: "AI-Augmented Quantity Surveying Platform for Africa. Built Zero QS, an AI-augmented quantity surveying platform designed for African construction professionals. The platform helps quantity surveyors build Bills of Quantity (BOQ) and Bills of Materials (BOM) automatically using AI and results are automatically sent to take off project specific.",
+        stack: ["Next.js", "Tailwind CSS", "AI/ML"],
+        githubLink: "https://github.com/Paulin-NIYOBYOSE",
+        liveLink: "https://zeroqs.vercel.app/",
+        image: "/zero.png"
+    },
+    {
         title: "Digital Cost estimation",
         description: "A digital platform for estimating construction costs, planning construction projects, managing employees and companies",
         stack: ["Next.js", "Tailwind CSS", "NestJs", "PostgresQL", "Prisma"],
